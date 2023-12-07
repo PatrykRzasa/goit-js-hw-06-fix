@@ -5,15 +5,15 @@ const incrementButton = document.querySelector(
   'button[data-action="increment"]'
 );
 const currentValue = document.querySelector("#value");
-let valueCount = 0;
+let counterValue = 0;
 function increaseValue() {
-  valueCount += 1;
-  currentValue.textContent = valueCount;
+  counterValue += 1;
+  currentValue.textContent = counterValue;
 }
 
 function decreaseValue() {
-  valueCount -= 1;
-  currentValue.textContent = valueCount;
+  counterValue -= 1;
+  currentValue.textContent = counterValue;
 }
 decrementButton.addEventListener("click", decreaseValue);
 incrementButton.addEventListener("click", increaseValue);
